@@ -8,4 +8,8 @@ add_executable(neural_network_handwriting_recognizer
     libs/data.h
     libs/input_parser.h
     libs/input_parser.cpp
+    libs/encoder.h
+    libs/encoder.cpp
+    libs/outputter.h
+    libs/outputter.cpp
 )

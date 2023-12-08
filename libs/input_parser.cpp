@@ -59,12 +59,5 @@ Data Input_Parser::parse(const std::string& input_file)
         data.digits.push_back(digit);
     }
 
-    for (const auto& digit : data.digits)
-    {
-        for (const auto& row : digit.first)
-            std::cout << row << '\n';
-    }
-    std::cout << "-------------------------\n";
-
     return data;
 }

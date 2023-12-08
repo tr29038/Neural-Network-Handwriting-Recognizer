@@ -1,6 +1,8 @@
 #include <iostream>
 
+#include "encoder.h"
 #include "input_parser.h"
+#include "outputter.h"
 
 int main(int argc, char* argv[])
 {
@@ -12,4 +14,7 @@ int main(int argc, char* argv[])
 
     std::string input_file = argv[1];
     auto data = Input_Parser::parse(input_file);
+    auto encodings = Encoder::encode(data.digits);
+    Outputter::output(encodings);
+    Outputter::output(data.digits);
 }
